@@ -23,11 +23,11 @@
             <div class="dropdown">
             <li><a href="Menu.html">FOOD MENU</a></li>
             <div class="dropdown-content"> 
-               <a href="#Malabon" target="_blank">Our Specialty </a>
-               <a href="#Rice-Meals" target="_blank"> Rice Meals </a>
-               <a href="#Short-Orders" target="_blank"> Short Orders </a>
-               <a href="#Snacks" target="_blank"> Snacks </a>
-               <a href="#Drinks" target="_blank"> Drinks </a>
+               <a href="Menu.html#Malabon" target="_blank">Our Specialty </a>
+               <a href="Menu.html#Rice-Meals" target="_blank"> Rice Meals </a>
+               <a href="Menu.html#Short-Orders" target="_blank"> Short Orders </a>
+               <a href="Menu.html#Snacks" target="_blank"> Snacks </a>
+               <a href="Menu.html#Drinks" target="_blank"> Drinks </a>
             </div>
             </div>
             <li><a href="Contacts.html">CONTACTS</a></li>
@@ -79,13 +79,6 @@ function showtheMenu(){
 function hidetheMenu(){
    navigation.style.right = "-220px";
 }
-
-window.addEventListener('load', function () {
-    const dropdownLinks = document.querySelectorAll('.dropdown-content a');
-    if (window.innerWidth <= 700) {
-        dropdownLinks.forEach(link => link.removeAttribute('target'));
-    }
-});
 </script>
 
 
