@@ -658,3 +658,23 @@ textarea::placeholder {
     font-size: 15px; 
     opacity: 1; 
 }
+@media (max-width: 700px) {
+     .Contacts-Column input, .Contacts-Column textarea {
+        box-sizing: border-box; 
+    }
+    .Contacts {
+        width: 100%;
+        height: auto;
+    }
+    .Contact-Location {
+        padding: 50px 0;
+    }
+    .Contact-Location iframe {
+        width: 90%;
+        margin-left: 20px;
+    }
+    .Contacts-Column {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
