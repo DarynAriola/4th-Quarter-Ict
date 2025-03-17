@@ -26,11 +26,11 @@
             <div class="dropdown">
             <li><a href="Menu.html">FOOD MENU</a></li>
             <div class="dropdown-content"> 
-               <a href="Menu.html#Malabon">Our Specialty </a>
-               <a href="Menu.html#Rice-Meals"> Rice Meals </a>
-               <a href="Menu.html#Short-Orders"> Short Orders </a>
-               <a href="Menu.html#Snacks"> Snacks </a>
-               <a href="Menu.html#Drinks"> Drinks </a>
+               <a href="Menu.html#Malabon" onclick="showSection('Malabon')">Our Specialty </a>
+               <a href="Menu.html#Rice-Meals" onclick="showSection('Rice-Meals')"> Rice Meals </a>
+               <a href="Menu.html#Short-Orders" onclick="showSection('Short-Orders')"> Short Orders </a>
+               <a href="Menu.html#Snacks" onclick="showSection('Snacks')"> Snacks </a>
+               <a href="Menu.html#Drinks" onclick="showSection('Drinks')"> Drinks </a>
             </div>
             </div>
             <li><a href="Contacts.html">CONTACTS</a></li>
@@ -477,6 +477,23 @@ function showtheMenu(){
 function hidetheMenu(){
    navigation.style.right = "-220px";
 }
+function showSection(sectionId) {
+      const sections = document.querySelectorAll('.Menu-Section');
+      sections.forEach(section => {
+         section.style.display = 'none';
+      });
+      document.getElementById(sectionId).style.display = 'block';
+   }
+   function handleHashChange() {
+      const hash = window.location.hash.substring(1); 
+      if (hash) {
+         showSection(hash);
+      } else { 
+         showSection('Malabon'); 
+      }
+   }
+      window.addEventListener('DOMContentLoaded', handleHashChange);
+      window.addEventListener('hashchange', handleHashChange);
 </script>
 
 
