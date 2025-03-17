@@ -507,9 +507,9 @@ nav .fa {
     font-size: 20px;
 }
 .New-Red-Tab {
-    border: 1px solid #ffa500;
+    border: 1px solid #020101;
     background: transparent;
-    color: #ffa500;
+    color: #000000;
 }
 .New-Red-Tab:hover {
     color: #ffffff;
